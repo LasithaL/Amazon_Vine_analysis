@@ -6,19 +6,27 @@ The analysis of data in this project required that we select a dataset from a li
 
 From the dataset, a subset was extracted that include 'Review ID', 'Star Rating', 'Helpful Votes', 'Total Votes', 'Vine', 'Verified Purchase' columns as vine_df, a DataFrame. The DataFrame was inspected for data type to make sure that they were compatible to use in the analysis.
 
+Vine DataFrame
+
 ![Vine DataFrame](images/vine_df.PNG)
 
 The data was then filtered for reviews that receive more than 20 total votes AND greater than equal to 50% of favorable votes.
+
+Favorable Data
 
 ![Favorable Data](images/pct50_favorable.PNG)
 
 The dataset was then divided again using a filter method into two separate dataset paid and unpaid (paid = vine subscribers and unpaid = non-subscribers) for analysis.
 
-![Paid vs Unpaid DataFrames](paid_unpaid_df.PNG)
+Paid vs. Unpaid DatFrames
+
+![Paid vs Unpaid DataFrames](images/paid_unpaid_df.PNG)
 
 The percentage of five-star votes were calculated for both the paid and unpaid subscriber groups.
 
-![Favorable Percentages](pct_favor_pd_unpaid.PNG)
+Five-Star Percentages
+
+![Favorable Percentages](images/pct_favor_pd_unpaid.PNG)
 
 ## Results
 As we investigate the five-start rated counts for the paid and unpaid subscribers, it is seen that 42.4% (246 of 580) paid subscribers and 50.0% (23837 of 47703) unpaid subscribers voted with a five-star rating.
